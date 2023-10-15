@@ -1,0 +1,763 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+@font-face {
+    font-family: 'glacial_indifferencebold';
+    src: url('fonts/glacialindifference/glacialindifference-bold-webfont.woff2') format('woff2'),
+         url('fonts/glacialindifference/glacialindifference-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mardotoregular';
+    src: url('fonts/Mardoto/mardoto-regular-webfont.woff2') format('woff2'),
+         url('fonts/Mardoto/mardoto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mardotobold';
+    src: url('fonts/Mardotobold/mardoto-bold-webfont.woff2') format('woff2'),
+         url('fonts/Mardotobold/mardoto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+} 
+  
+body {
+    height: 100%;
+    font-size: 15px;
+    font-family: 'mardotoregular', sans-serif;
+}
+
+header {
+    position: fixed;
+    height: 65px;
+    background-color: #545C84;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: calc(20rem/15);
+    z-index: 234;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1250px;
+    color: #C9D5F8;
+    align-items: center;
+}
+
+nav #regularNav {
+    display: flex;
+    align-items: center;
+}
+
+nav #regularNav a {
+    padding: 18.25px 25px;
+    height: 100%;
+}
+
+#Jacobf {
+    font-family: 'glacial_indifferencebold', sans-serif;
+    font-size: 1.6rem;
+}
+
+#responsiveNav {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+}
+
+.responsiveNavContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* padding: 15px 0px; */
+    background-color: #545C84;
+}
+
+.responsiveNavContainer a {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #C9D5F8;
+}
+
+nav path {
+    fill: #C9D5F8;
+    /* width: 28.39px;
+    height: 24.33px; */
+}
+
+nav svg {
+    height: 32.5px;
+    width: 28.4px;
+}
+
+nav svg:hover {
+    cursor: pointer;
+}
+
+nav #regularNav a:hover, .responsiveNavContainer a:hover {
+    color: white;
+    background-color: #5D6694;
+}
+
+#Jacobf:hover {
+    color: #C9D5F8;
+}
+
+
+#Home {
+    display: flex;  
+    height: 100%;  
+}
+
+section {
+    height: 100vh;
+    min-height: 650px;
+}
+
+#Home img {
+    display: inline-block;
+    width: 120%;
+    
+    height: 100%;
+}
+
+#homeimgContainer {
+    overflow: hidden;
+    flex: 1;
+}
+
+#half {
+    padding-top: 100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.greet {
+    text-align: center;
+    font-size: calc(43.6px * 1.5);
+    line-height: 1;
+    font-family: 'mardotobold', sans-serif;
+    color: #5F7BCD;
+    height: 75px;
+}
+
+
+#name {
+    color: black;
+    font-size: calc(46.6px * 1.5) ;
+    text-align: center;
+    font-family: 'mardotobold', sans-serif;
+    line-height: 1;
+}
+
+#Home a {
+    text-decoration: none;
+    color: white;
+    background-color: #5F7BCD;
+    padding: 8px 60px;
+    margin-top: 50px;
+    border-radius: 2px;
+    font-size: calc(10.9px * 1.25);
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #5F7BCD;
+}
+
+#Home a:hover {
+    color: #5F7BCD;
+    background-color: white;
+    border: 2px solid #5F7BCD;
+}
+
+.container:nth-of-type(2) {
+    margin-top: -10px;
+}
+
+
+#hi {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 0.25s;
+    animation-timing-function: steps(100, end);
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s; 
+}
+
+#nameis {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 0.75s;
+    animation-timing-function: steps(100, end);
+    animation-fill-mode: forwards;
+    animation-delay: 2.25s; 
+}
+
+#name {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1s;
+    animation-timing-function: steps(100, end);
+    animation-fill-mode: forwards;
+    animation-delay: 3.55s;  
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100%}
+}
+
+#AboutMe {
+    background-color: #5F7BCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainAbout {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1250px;
+
+}
+
+#mainAbout div:nth-of-type(1) {
+    flex: 1.5;
+}
+
+#mainAbout div:nth-of-type(2) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#mainAbout h1 {
+    font-family: 'mardotobold' , sans-serif;
+    padding-bottom: 20px;
+    font-size: calc(46.6px * 1.3);
+}
+
+#mainAbout img {
+    border-radius: 50%;
+    width: 500px;
+}
+
+#mainAbout a {
+    text-decoration: none;
+    color: #5F7BCD;
+    background-color: white;
+    padding: 8px 60px;
+    border-radius: 2px;
+    font-size: calc(10.9px * 1.25);
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+}
+
+#mainAbout a:hover {
+    color: white;
+    background-color: #5F7BCD;
+    border: 2px solid white;
+}
+
+#mainAbout h2, #mainAbout p {
+    padding-bottom: 15px;
+}
+
+#asde {
+    margin-bottom: 30px;
+}
+
+#WorkExperience {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#WorkExperience h1 {
+    font-family: 'mardotobold' , sans-serif;
+    font-size: calc(46.6px * 1.3);
+    border-bottom: 1px solid #5F7BCD;
+    padding-bottom: 20px;
+    width: 380px;
+}
+
+#WorkExperience h3, #WorkExperience p {
+    color: #393737;
+}
+
+#mainWorkExperience {
+    padding-top: 60px;
+    color: #5F7BCD;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 20px;
+    width: 1250px;
+}
+
+#flexItem1 {
+    flex: 3;
+}
+
+#dates {
+    flex: 1;
+    font-size: 1rem;
+}
+
+#flexItem3 {
+    flex: 4;
+}
+
+
+
+.jobTitle {
+    padding-bottom: 10px;
+}
+
+.jobDescription {
+    margin-bottom: 30px;
+}
+
+
+.company {
+    padding-bottom: 5px;
+}
+
+#dates h2:nth-of-type(1) {
+    margin-bottom: calc(84px + 32px);
+}
+
+#dates h2:nth-of-type(2) {
+    margin-bottom: calc(84px + 32px);
+}
+
+#dates h2 {
+    min-width: 119px;
+}
+
+#Projects {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainProjects {
+    padding-top: 30px;
+    color: white;
+    font-size: 1.2rem;
+    width: 1250px;
+    color: #5F7BCD;
+    font-family: 'mardotobold' , sans-serif;
+}
+
+#mainProjects h1 {
+    font-size: calc(46.6px * 1.3);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#flexProjects {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#flexProjects img {
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+}
+
+#flexProjects img:hover {
+    transform: scale(1.1);
+}
+
+.screenshotContainer {
+    overflow: hidden;
+    border-radius: 20px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+#flexProjects h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.viewlive {
+    text-decoration: none;
+    color: white;
+    background-color: #5F7BCD;
+    padding: 10px 2px;
+    font-size: 0.9rem;
+    border: 2px solid #5F7BCD;
+}
+
+.viewlive:hover {
+    transform: scale(1.2);
+}
+
+svg {
+    height: 50px;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+
+path {
+    fill: black;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+#seemore {
+    text-decoration: none;
+    color: #5F7BCD;
+    background-color: white;
+    padding: 8px 60px;
+    margin-top: 50px;
+    border-radius: 2px;
+    font-size: calc(10.9px * 1.25);
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+}
+
+#seemore:hover {
+    color: white;
+    background-color: #5F7BCD;
+    border: 2px solid #5F7BCD;
+}
+
+#seemoreButton {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.reveal{
+    transform: translateY(40px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal1{
+    transform: translateY(40px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+.active1{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal2{
+    transform: translateY(40px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+.active2{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#ReachOut {
+    background-color: #5F7BCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainReachOut {
+    color: white;
+    font-size: 1.2rem;
+    width: 1250px;
+    font-family: 'mardotobold' , sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+#mainReachOut div:nth-of-type(1) {
+    flex: 1;
+}
+
+#mainReachOut div:nth-of-type(2) {
+    flex: 1;
+}
+
+#mainReachOut img {
+    width: 100%;
+    height: 107%;
+}
+
+#mainReachOut h1 {
+    font-size: calc(46.6px * 1.3);
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+    
+}
+
+#mainReachOut p:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+
+#mainReachOut p:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+#siteLink {
+    margin-bottom: 50px;
+    color: white;
+}
+#siteLinkContainer {
+    margin-bottom: 50px;
+}
+
+#mainReachOut path {
+    fill: white;
+}
+
+#mainReachOut svg {
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+#mainReachOut #Resume {
+    text-decoration: none;
+    color: #5F7BCD;
+    background-color: white;
+    padding: 8px 60px;
+    border-radius: 2px;
+    font-size: calc(10.9px * 1.25);
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid white;
+}
+
+#resumeContainer {
+    margin-top: 50px;
+}
+
+#mainReachOut #Resume:hover {
+    color: white;
+    background-color: #5F7BCD;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 1270px) {
+    #mainAbout, #mainWorkExperience, #mainProjects, #mainReachOut {
+        width: calc(1250px * 0.80);
+    }
+
+    nav {
+        /* width: 90%; */
+    }
+
+    #jacobfContainer {
+        padding-left: 30px;
+    }
+
+    #regularNav {
+        padding-right: 30px;
+    }
+
+    #Home {
+        /* display: block; */
+    }
+
+    #half h1 {
+        /* transform: scale(1.3); */
+        /* width: 20px; */
+        /* font-size: ; */
+
+    }
+
+    .container {
+        margin-bottom: 10px;
+    }
+
+    .container:nth-of-type(2) {
+        height: 83px;
+    }
+
+    .container h1 {
+        height: 100%;
+    }
+
+    .greet {
+        font-size: calc(43.6px * 1.5 * 1.2) ;
+    }
+
+    #name {
+        font-size: calc(46.6px * 1.5 * 1.2) ;
+    }
+
+    
+
+ 
+    #mainWorkExperience {
+        gap: 0;
+    }
+
+    #mainWorkExperience h1 {
+        width: 100%;
+    }
+
+    .date {
+        position: absolute;
+        opacity: 0;
+    }
+
+
+
+    #mainAbout img {
+        width: calc(500px * 0.80);
+    }
+
+
+    #mainProjects {
+        padding-top: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 1010px) {
+    #mainAbout, #mainWorkExperience, #mainProjects, #mainReachOut {
+        transform: scale(0.85);
+    }
+
+    /* nav {
+        width: calc(1250px * 0.80 * 0.85);
+    } */
+
+    
+
+}
+
+@media screen and (max-width: 900px) {
+    #mainAbout, #mainWorkExperience {
+        flex-direction: column;
+    }
+
+    #flexProjects {
+        display: block;
+    }
+
+    #mainProjects {
+        width: 400px;
+    }
+
+    #mainAbout img {
+        width: 70%;
+    }
+
+    #reachOutContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        height: auto; 
+        min-height: 0;
+    }
+
+
+    .jobTitle:nth-of-type(1) {
+        content: "Software Developer Intern 01/21 - 04/21";
+    }
+
+    #flexItem3 {
+        margin-top: 50px;
+    }
+
+    .buttons {
+        margin-bottom: 40px;
+    }
+
+    .greet {
+        font-size: calc(43.6px  * 1.2) ;
+    }
+
+    #name {
+        font-size: calc(46.6px  * 1.2) ;
+    }
+    .container:nth-of-type(2) {
+        height: 55px;
+    }
+
+    #mainReachOut {
+        display: block;
+    }
+
+    #reachOutImgContainer {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    #ReachOut {
+        height: 100vh;
+        min-height: 570px;
+        align-items: start;
+        padding-top: 70px;
+    }
+
+}
