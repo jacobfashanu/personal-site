@@ -713,15 +713,6 @@ path {
         margin-bottom: 40px;
     }
 
-    .greet {
-        /* font-size: calc(43.6px  * 1.2) ; */
-        /* font-size: 1px; */
-    }
-
-    #name {
-        /* font-size: calc(46.6px  * 1.2) ; */
-        /* font-size: 1px; */
-    }
     .container:nth-of-type(2) {
         height: 55px;
     }
