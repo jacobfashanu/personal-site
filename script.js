@@ -67,7 +67,10 @@ function addResponsiveNav() {
     const homelink = document.createElement("a");
     homelink.setAttribute("href", "#Home");
     homelink.innerHTML = "HOME";
-    homelink.addEventListener("click", removeResponsiveNav);
+    homelink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        removeResponsiveNav();
+    });
     home.appendChild(homelink);
     responsiveNav.appendChild(home);
 
@@ -76,7 +79,10 @@ function addResponsiveNav() {
     const aboutlink = document.createElement("a");
     aboutlink.setAttribute("href", "#AboutMe");
     aboutlink.innerHTML = "ABOUT"
-    aboutlink.addEventListener("click", removeResponsiveNav);
+    aboutlink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        removeResponsiveNav();
+    });
     about.appendChild(aboutlink);
     responsiveNav.appendChild(about);
 
@@ -85,7 +91,10 @@ function addResponsiveNav() {
     const experiencelink = document.createElement("a");
     experiencelink.setAttribute("href", "#WorkExperience");
     experiencelink.innerHTML = "EXPERIENCE";
-    experiencelink.addEventListener("click", removeResponsiveNav);
+    experiencelink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        removeResponsiveNav();
+    });
     experience.appendChild(experiencelink);
     responsiveNav.appendChild(experience);
 
@@ -94,7 +103,10 @@ function addResponsiveNav() {
     const projectslink = document.createElement("a");
     projectslink.setAttribute("href", "#Projects");
     projectslink.innerHTML = "PROJECTS";
-    projectslink.addEventListener("click", removeResponsiveNav);
+    projectslink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        removeResponsiveNav();
+    });
     projects.appendChild(projectslink);
     responsiveNav.appendChild(projects);
 
@@ -103,7 +115,10 @@ function addResponsiveNav() {
     const contactlink = document.createElement("a");
     contactlink.setAttribute("href", "#ReachOut");
     contactlink.innerHTML = "CONTACT";
-    contactlink.addEventListener("click", removeResponsiveNav);
+    contactlink.addEventListener("click", (event) => {
+        event.stopPropagation();
+        removeResponsiveNav();
+    });
     contact.appendChild(contactlink);
     responsiveNav.appendChild(contact);
 
@@ -131,7 +146,8 @@ if (window.innerWidth <= 1270) {
     iconSvg.setAttribute('viewBox', "0 0 448 512");
     iconPath.setAttribute('d', "M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z");
 
-    iconSvg.addEventListener("click", () => {
+    iconSvg.addEventListener("click", (event) => {
+        event.stopPropagation();
         if(isResponsiveNavshowing) {
             removeResponsiveNav();
         }
@@ -170,7 +186,8 @@ window.addEventListener("resize", () => {
             iconSvg.setAttribute('viewBox', "0 0 448 512");
             iconPath.setAttribute('d', "M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z");
 
-            iconSvg.addEventListener("click", () => {
+            iconSvg.addEventListener("click", (e) => {
+                e.stopPropagation();
                 if(isResponsiveNavshowing) {
                     removeResponsiveNav();
                 }
@@ -239,4 +256,10 @@ window.addEventListener("resize", () => {
     }
 });
 
+document.querySelector("header").addEventListener("click", (e) => e.stopPropagation())
 
+window.addEventListener("click", () => {
+    if(isResponsiveNavshowing) {
+        removeResponsiveNav();
+    }
+});
