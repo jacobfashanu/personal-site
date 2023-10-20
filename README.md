@@ -1,6 +1,4 @@
-### Links
-
-- Live Site URL: [https://jacobfashanu.com/](https://jacobfashanu.com/)
+Live Site URL: [https://jacobfashanu.com/](https://jacobfashanu.com/)
 
 ### Screenshot
 
